@@ -1,7 +1,7 @@
 import subprocess as sp
 import numpy as np
 import matplotlib
-matplotlib.use("Agg") //backend renderer
+matplotlib.use("Agg") #backend renderer
 from matplotlib import pyplot as plt
 
 test_sizes = ["128", "256", "512", "1024", "2048"]
