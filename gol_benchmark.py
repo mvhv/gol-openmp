@@ -16,7 +16,6 @@ real_time = [[0 for x in test_sizes] for y in tests]
 user_time = [[0 for x in test_sizes] for y in tests]
 for t, test in enumerate(tests):
     for s, size in enumerate(test_sizes):
-        print(test+size)
         for i in range(10):
             sub = sp.run(["/usr/bin/time", "-f", "%e %U", "./gol_"+test, size],
                     stdout=sp.DEVNULL, stderr=sp.PIPE)
