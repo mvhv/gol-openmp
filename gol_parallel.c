@@ -121,6 +121,5 @@ int main(int argc, char** argv) {
     stepGame(maingrid, backgrid);
     swapGrid(&maingrid, &backgrid);
   }
-
   return EXIT_SUCCESS;
 }
