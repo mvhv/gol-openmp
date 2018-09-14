@@ -56,21 +56,21 @@ plt.clf()
 #benchmark cores
 real_time = [0 for x in num_threads]
 user_time = [0 for x in num_threads]
-for n, num in enumerate(threads):
+for n, num in enumerate(num_threads):
     for i in range(10):
-        sub = sp.run(["/usr/bin/time", "-f", "%e %U", "./gol_"+test, size],
+        sub = sp.run(["/usr/bin/time", "-f", "%e %U", "./gol_parallel", "2048", num],
                 stdout=sp.DEVNULL, stderr=sp.PIPE)
         output = sub.stderr.decode().strip().split()
         real_time[n] += float(output[0])
         user_time[n] += float(output[1])
-    real_time[t] /= 10
-    real_time[t] /= 10
+    real_time[n] /= 10
+    user_time[n] /= 10
 
 ind = np.arange(len(num_threads))
-width = 0.3
+width = 0.5
 
 #plot realtime
-p1 = plt.bar(ind-width, real_time, width=width)
+p1 = plt.bar(ind, real_time, width=width)
 plt.title("Real Time vs Threads")
 plt.ylabel("Time Elapsed (s)")
 plt.xlabel("Threads Created")
@@ -79,7 +79,7 @@ plt.savefig("threads_realtime.png")
 plt.clf()
 
 #plot usertime
-p1 = plt.bar(ind-width, user_time, width=width)
+p1 = plt.bar(ind, user_time, width=width)
 plt.title("User Time vs Threads")
 plt.ylabel("Equivalent Time (s)")
 plt.xlabel("Threads Created")
