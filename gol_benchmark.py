@@ -5,11 +5,11 @@ matplotlib.use("Agg") #backend renderer
 from matplotlib import pyplot as plt
 
 test_sizes = ["128", "256", "512", "1024", "2048"]
-tests = ["serial", "parallel"]
+tests = ["serial", "parallel", "collapse"]
 
 #compile
-sp.run(["gcc", "gol_serial.c", "-o", "gol_serial"])
-sp.run(["gcc", "-fopenmp", "gol_parallel.c", "-o", "gol_parallel"])
+for test in tests:
+    sp.run(["gcc", "-fopenmp", "gol_"+test+".c", "-o", "gol_"+test])
 
 #benchmark
 real_time = [[0 for x in test_sizes] for y in tests]
