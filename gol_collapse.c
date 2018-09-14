@@ -1,7 +1,7 @@
 /* 
  * CITS3402 - Assignment 1
  * Game of life: 4-neighbourhood
- * Row-loop parallel implementation
+ * Collapsed-loop parallel implementation
  *
  * Jesse Wyatt (20756971)
  */
@@ -42,14 +42,14 @@ void swapGrid(bool** g1, bool** g2) {
  * Simulates the game one step forward. Updates the next step of the game
  * in backgrid using the data of the current step held in maingrid.
  *
- * Parallelism is performed here. The outer loop progresses through the
- * rows of the game grid. The rows in this loop are divided up equally,
- * and each thread is assigned a set of these rows to process.
+ * Parallelism is performed here. The nested loops are collapsed into all
+ * combinations of loop variables and these combinations are divided between
+ * threads.
  */
 void stepGame(bool* maingrid, bool* backgrid) {
   int neighbours;
   //parallelise outer for loop only
-  #pragma omp parallel for private(neighbours)
+  #pragma omp parallel for collapse (2) private(neighbours)
   for (int i = 0; i < GRID_SIZE; ++i) {
     for (int j = 0; j < GRID_SIZE; ++j) {
       //check neighbourhood
