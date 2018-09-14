@@ -6,12 +6,13 @@ from matplotlib import pyplot as plt
 
 test_sizes = ["128", "256", "512", "1024", "2048"]
 tests = ["serial", "parallel", "collapse"]
+num_threads = ["1", "2", "4", "8", "16", "32"]
 
 #compile
 for test in tests:
     sp.run(["gcc", "-fopenmp", "gol_"+test+".c", "-o", "gol_"+test])
 
-#benchmark
+#benchmark imps
 real_time = [[0 for x in test_sizes] for y in tests]
 user_time = [[0 for x in test_sizes] for y in tests]
 for t, test in enumerate(tests):
@@ -32,22 +33,56 @@ width = 0.3
 p1 = plt.bar(ind-width, real_time[0], width=width)
 p2 = plt.bar(ind, real_time[1], width=width)
 p3 = plt.bar(ind+width, real_time[2], width=width)
-plt.title("Elapsed Real Time")
-plt.ylabel("Time (s)")
+plt.title("Real Time vs Input Size")
+plt.ylabel("Elapsed Time (s)")
 plt.xlabel("Grid Dimension (cells)")
 plt.xticks(ind, test_sizes)
 plt.legend([p1[0], p2[0], p3[0]], tests)
-plt.savefig("realtime.png", bbox_inches="tight")
+plt.savefig("input_realtime.png", bbox_inches="tight")
 plt.clf()
 
 #plot usertime
 p1 = plt.bar(ind-width, user_time[0], width=width)
 p2 = plt.bar(ind, user_time[1], width=width)
 p3 = plt.bar(ind+width, user_time[2], width=width)
-plt.title("Equivalent User-mode Time")
-plt.ylabel("Time (s)")
+plt.title("User Time vs Input Size")
+plt.ylabel("Equivalent Time (s)")
 plt.xlabel("Grid Dimension (cells)")
 plt.xticks(ind, test_sizes)
 plt.legend([p1[0], p2[0], p3[0]], tests)
-plt.savefig("usertime.png", bbox_inches="tight")
+plt.savefig("input_usertime.png", bbox_inches="tight")
+plt.clf()
+
+#benchmark cores
+real_time = [0 for x in num_threads]
+user_time = [0 for x in num_threads]
+for n, num in enumerate(threads):
+    for i in range(10):
+        sub = sp.run(["/usr/bin/time", "-f", "%e %U", "./gol_"+test, size],
+                stdout=sp.DEVNULL, stderr=sp.PIPE)
+        output = sub.stderr.decode().strip().split()
+        real_time[n] += float(output[0])
+        user_time[n] += float(output[1])
+    real_time[t] /= 10
+    real_time[t] /= 10
+
+ind = np.arange(len(num_threads))
+width = 0.3
+
+#plot realtime
+p1 = plt.bar(ind-width, real_time, width=width)
+plt.title("Real Time vs Threads")
+plt.ylabel("Time Elapsed (s)")
+plt.xlabel("Threads Created")
+plt.xticks(ind, num_threads)
+plt.savefig("threads_realtime.png")
+plt.clf()
+
+#plot usertime
+p1 = plt.bar(ind-width, user_time, width=width)
+plt.title("User Time vs Threads")
+plt.ylabel("Equivalent Time (s)")
+plt.xlabel("Threads Created")
+plt.xticks(ind, num_threads)
+plt.savefig("threads_usertime.png")
 plt.clf()
