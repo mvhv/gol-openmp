@@ -81,8 +81,8 @@ void initGrid(bool* grid, double density) {
 }
 
 int main(int argc, char** argv) {
-  //grid size is only argument
-  if (argc == 2) {
+  //parse arguments
+  if (argc > 1) {
     GRID_SIZE = atoi(argv[1]);
     //grid size must be a positive power of 2
     if ((GRID_SIZE & (GRID_SIZE - 1)) || GRID_SIZE <= 0) {
