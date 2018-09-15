@@ -1,49 +1,689 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.9.14)  15 SEP 2018 16:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.9.15)  15 SEP 2018 20:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **cits3401_pa1_20756971.tex
 (./cits3401_pa1_20756971.tex
-LaTeX2e <2017-04-15>
-Babel <3.12> and hyphenation patterns for 3 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+LaTeX2e <2018-04-01> patch level 5
+(c:/texlive/2018/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+(c:/texlive/2018/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+(c:/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\enitkv@toks@=\toks14
+\labelindent=\skip43
+\enit@outerparindent=\dimen103
+\enit@toks=\toks15
+\enit@inbox=\box26
+\enitdp@description=\count88
+)
+(c:/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
 
-! LaTeX Error: File `enumitem.sty' not found.
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(c:/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count89
+\Gm@cntv=\count90
+\c@Gm@tempcnt=\count91
+\Gm@bindingoffset=\dimen104
+\Gm@wd@mp=\dimen105
+\Gm@odd@mp=\dimen106
+\Gm@even@mp=\dimen107
+\Gm@layoutwidth=\dimen108
+\Gm@layoutheight=\dimen109
+\Gm@layouthoffset=\dimen110
+\Gm@layoutvoffset=\dimen111
+\Gm@dimlist=\toks17
+)
+(c:/texlive/2018/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(c:/texlive/2018/texmf-dist/tex/latex/quoting/quoting.sty
+Package: quoting 2014/01/28 v0.1c Consolidated environment for displayed text
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
+(c:/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count92
+)
+(c:/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-Enter file name: 
-! Emergency stop.
-<read *> 
-         
-l.3 ^^M
-       
-*** (cannot \read from terminal in nonstop modes)
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
- 
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+\quo@toppartop=\skip44
+)
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+(c:/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2018/05/01 v3.3-147 Customizing captions (AR)
+
+(c:/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2018/05/27 v1.8a caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen114
+\captionmargin@=\dimen115
+\captionwidth=\dimen116
+\caption@tempdima=\dimen117
+\caption@indent=\dimen118
+\caption@parindent=\dimen119
+\caption@hangindent=\dimen120
+)
+\c@ContinuedFloat=\count93
+)
+(./cits3401_pa1_20756971.aux)
+\openout1 = `cits3401_pa1_20756971.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(113.81102pt, 386.67296pt, 113.81102pt)
+* v-part:(T,H,B)=(113.81102pt, 567.34795pt, 113.81102pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=386.67296pt
+* \textheight=567.34795pt
+* \oddsidemargin=41.54103pt
+* \evensidemargin=41.54103pt
+* \topmargin=4.54103pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count94
+\scratchdimen=\dimen121
+\scratchbox=\box27
+\nofMPsegments=\count95
+\nofMParguments=\count96
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count97
+\MPscratchDim=\dimen122
+\MPnumerator=\count98
+\makeMPintoPDFobject=\count99
+\everyMPtoPDFconversion=\toks19
+) (c:/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(c:/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(c:/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 20.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 20.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 20.
+ [1
+
+{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 51.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 51.
+ [2] [3] [4]
+<vecs/input_realtime.pdf, id=25, 413.1416pt x 327.20317pt>
+File: vecs/input_realtime.pdf Graphic file (type pdf)
+<use vecs/input_realtime.pdf>
+Package pdftex.def Info: vecs/input_realtime.pdf  used on input line 123.
+(pdftex.def)             Requested size: 309.33954pt x 245.00235pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5] [6 <./vecs/input_realtime.pdf>]
+<vecs/input_usertime.pdf, id=73, 403.55893pt x 327.20317pt>
+File: vecs/input_usertime.pdf Graphic file (type pdf)
+<use vecs/input_usertime.pdf>
+Package pdftex.def Info: vecs/input_usertime.pdf  used on input line 135.
+(pdftex.def)             Requested size: 309.33954pt x 250.82385pt.
+<vecs/threads_realtime.pdf, id=74, 413.1416pt x 327.20317pt>
+File: vecs/threads_realtime.pdf Graphic file (type pdf)
+<use vecs/threads_realtime.pdf>
+Package pdftex.def Info: vecs/threads_realtime.pdf  used on input line 143.
+(pdftex.def)             Requested size: 290.00471pt x 229.68471pt.
+<vecs/threads_usertime.pdf, id=75, 403.55893pt x 327.20317pt>
+File: vecs/threads_usertime.pdf Graphic file (type pdf)
+<use vecs/threads_usertime.pdf>
+Package pdftex.def Info: vecs/threads_usertime.pdf  used on input line 148.
+(pdftex.def)             Requested size: 290.00471pt x 235.14673pt.
+ [7 <./vecs/input_usertime.pdf>] [8 <./vecs/threads_realtime.pdf> <./vecs/threa
+ds_usertime.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/threads_usertime.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+>]
+<vecs/serial128_0.pdf, id=193, 311.25296pt x 313.48003pt>
+File: vecs/serial128_0.pdf Graphic file (type pdf)
+<use vecs/serial128_0.pdf>
+Package pdftex.def Info: vecs/serial128_0.pdf  used on input line 166.
+(pdftex.def)             Requested size: 116.00307pt x 116.83243pt.
+<vecs/parallel128_0.pdf, id=194, 311.25296pt x 313.48003pt>
+File: vecs/parallel128_0.pdf Graphic file (type pdf)
+<use vecs/parallel128_0.pdf>
+Package pdftex.def Info: vecs/parallel128_0.pdf  used on input line 167.
+(pdftex.def)             Requested size: 116.00307pt x 116.83243pt.
+<vecs/collapse128_0.pdf, id=195, 311.25296pt x 313.48003pt>
+File: vecs/collapse128_0.pdf Graphic file (type pdf)
+<use vecs/collapse128_0.pdf>
+Package pdftex.def Info: vecs/collapse128_0.pdf  used on input line 168.
+(pdftex.def)             Requested size: 116.00307pt x 116.83243pt.
+ [9]
+<vecs/serial128_10.pdf, id=199, 311.25296pt x 313.48003pt>
+File: vecs/serial128_10.pdf Graphic file (type pdf)
+<use vecs/serial128_10.pdf>
+Package pdftex.def Info: vecs/serial128_10.pdf  used on input line 170.
+(pdftex.def)             Requested size: 116.00307pt x 116.83243pt.
+<vecs/parallel128_10.pdf, id=200, 311.25296pt x 313.48003pt>
+File: vecs/parallel128_10.pdf Graphic file (type pdf)
+<use vecs/parallel128_10.pdf>
+Package pdftex.def Info: vecs/parallel128_10.pdf  used on input line 171.
+(pdftex.def)             Requested size: 116.00307pt x 116.83243pt.
+<vecs/collapse128_10.pdf, id=201, 311.25296pt x 313.48003pt>
+File: vecs/collapse128_10.pdf Graphic file (type pdf)
+<use vecs/collapse128_10.pdf>
+Package pdftex.def Info: vecs/collapse128_10.pdf  used on input line 172.
+(pdftex.def)             Requested size: 116.00307pt x 116.83243pt.
+<vecs/serial128_20.pdf, id=202, 311.25296pt x 313.48003pt>
+File: vecs/serial128_20.pdf Graphic file (type pdf)
+<use vecs/serial128_20.pdf>
+Package pdftex.def Info: vecs/serial128_20.pdf  used on input line 174.
+(pdftex.def)             Requested size: 116.00307pt x 116.83243pt.
+<vecs/parallel128_20.pdf, id=203, 311.25296pt x 313.48003pt>
+File: vecs/parallel128_20.pdf Graphic file (type pdf)
+<use vecs/parallel128_20.pdf>
+Package pdftex.def Info: vecs/parallel128_20.pdf  used on input line 175.
+(pdftex.def)             Requested size: 116.00307pt x 116.83243pt.
+<vecs/collapse128_20.pdf, id=204, 311.25296pt x 313.48003pt>
+File: vecs/collapse128_20.pdf Graphic file (type pdf)
+<use vecs/collapse128_20.pdf>
+Package pdftex.def Info: vecs/collapse128_20.pdf  used on input line 176.
+(pdftex.def)             Requested size: 116.00307pt x 116.83243pt.
+ [10 <./vecs/serial128_0.pdf> <./vecs/parallel128_0.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/parallel128_0.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+> <./vecs/collapse128_0.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/collapse128_0.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+> <./vecs/serial128_10.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/serial128_10.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+> <./vecs/parallel128_10.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/parallel128_10.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+> <./vecs/collapse128_10.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/collapse128_10.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+> <./vecs/serial128_20.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/serial128_20.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+> <./vecs/parallel128_20.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/parallel128_20.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+> <./vecs/collapse128_20.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/collapse128_20.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+>]
+<vecs/serial256_0.pdf, id=437, 311.57597pt x 313.48003pt>
+File: vecs/serial256_0.pdf Graphic file (type pdf)
+<use vecs/serial256_0.pdf>
+Package pdftex.def Info: vecs/serial256_0.pdf  used on input line 182.
+(pdftex.def)             Requested size: 116.00307pt x 116.71284pt.
+<vecs/parallel256_0.pdf, id=438, 311.57597pt x 313.48003pt>
+File: vecs/parallel256_0.pdf Graphic file (type pdf)
+<use vecs/parallel256_0.pdf>
+Package pdftex.def Info: vecs/parallel256_0.pdf  used on input line 183.
+(pdftex.def)             Requested size: 116.00307pt x 116.71284pt.
+<vecs/collapse256_0.pdf, id=439, 311.57597pt x 313.48003pt>
+File: vecs/collapse256_0.pdf Graphic file (type pdf)
+<use vecs/collapse256_0.pdf>
+Package pdftex.def Info: vecs/collapse256_0.pdf  used on input line 184.
+(pdftex.def)             Requested size: 116.00307pt x 116.71284pt.
+<vecs/serial256_10.pdf, id=440, 311.57597pt x 313.48003pt>
+File: vecs/serial256_10.pdf Graphic file (type pdf)
+<use vecs/serial256_10.pdf>
+Package pdftex.def Info: vecs/serial256_10.pdf  used on input line 186.
+(pdftex.def)             Requested size: 116.00307pt x 116.71284pt.
+<vecs/parallel256_10.pdf, id=441, 311.57597pt x 313.48003pt>
+File: vecs/parallel256_10.pdf Graphic file (type pdf)
+<use vecs/parallel256_10.pdf>
+Package pdftex.def Info: vecs/parallel256_10.pdf  used on input line 187.
+(pdftex.def)             Requested size: 116.00307pt x 116.71284pt.
+<vecs/collapse256_10.pdf, id=442, 311.57597pt x 313.48003pt>
+File: vecs/collapse256_10.pdf Graphic file (type pdf)
+<use vecs/collapse256_10.pdf>
+Package pdftex.def Info: vecs/collapse256_10.pdf  used on input line 188.
+(pdftex.def)             Requested size: 116.00307pt x 116.71284pt.
+<vecs/serial256_20.pdf, id=443, 311.57597pt x 313.48003pt>
+File: vecs/serial256_20.pdf Graphic file (type pdf)
+<use vecs/serial256_20.pdf>
+Package pdftex.def Info: vecs/serial256_20.pdf  used on input line 190.
+(pdftex.def)             Requested size: 116.00307pt x 116.71284pt.
+<vecs/parallel256_20.pdf, id=444, 311.57597pt x 313.48003pt>
+File: vecs/parallel256_20.pdf Graphic file (type pdf)
+<use vecs/parallel256_20.pdf>
+Package pdftex.def Info: vecs/parallel256_20.pdf  used on input line 191.
+(pdftex.def)             Requested size: 116.00307pt x 116.71284pt.
+<vecs/collapse256_20.pdf, id=445, 311.57597pt x 313.48003pt>
+File: vecs/collapse256_20.pdf Graphic file (type pdf)
+<use vecs/collapse256_20.pdf>
+Package pdftex.def Info: vecs/collapse256_20.pdf  used on input line 192.
+(pdftex.def)             Requested size: 116.00307pt x 116.71284pt.
+ [11 <./vecs/serial256_0.pdf> <./vecs/parallel256_0.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/parallel256_0.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+> <./vecs/collapse256_0.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/collapse256_0.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+> <./vecs/serial256_10.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/serial256_10.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+> <./vecs/parallel256_10.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/parallel256_10.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+> <./vecs/collapse256_10.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/collapse256_10.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+> <./vecs/serial256_20.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/serial256_20.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+> <./vecs/parallel256_20.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/parallel256_20.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+> <./vecs/collapse256_20.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/collapse256_20.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+>]
+<vecs/serial512_0.pdf, id=670, 311.31514pt x 313.48003pt>
+File: vecs/serial512_0.pdf Graphic file (type pdf)
+<use vecs/serial512_0.pdf>
+Package pdftex.def Info: vecs/serial512_0.pdf  used on input line 198.
+(pdftex.def)             Requested size: 116.00307pt x 116.80852pt.
+<vecs/parallel512_0.pdf, id=671, 311.31514pt x 313.48003pt>
+File: vecs/parallel512_0.pdf Graphic file (type pdf)
+<use vecs/parallel512_0.pdf>
+Package pdftex.def Info: vecs/parallel512_0.pdf  used on input line 199.
+(pdftex.def)             Requested size: 116.00307pt x 116.80852pt.
+<vecs/collapse512_0.pdf, id=672, 311.31514pt x 313.48003pt>
+File: vecs/collapse512_0.pdf Graphic file (type pdf)
+<use vecs/collapse512_0.pdf>
+Package pdftex.def Info: vecs/collapse512_0.pdf  used on input line 200.
+(pdftex.def)             Requested size: 116.00307pt x 116.80852pt.
+<vecs/serial512_10.pdf, id=673, 311.31514pt x 313.48003pt>
+File: vecs/serial512_10.pdf Graphic file (type pdf)
+<use vecs/serial512_10.pdf>
+Package pdftex.def Info: vecs/serial512_10.pdf  used on input line 202.
+(pdftex.def)             Requested size: 116.00307pt x 116.80852pt.
+<vecs/parallel512_10.pdf, id=674, 311.31514pt x 313.48003pt>
+File: vecs/parallel512_10.pdf Graphic file (type pdf)
+<use vecs/parallel512_10.pdf>
+Package pdftex.def Info: vecs/parallel512_10.pdf  used on input line 203.
+(pdftex.def)             Requested size: 116.00307pt x 116.80852pt.
+<vecs/collapse512_10.pdf, id=675, 311.31514pt x 313.48003pt>
+File: vecs/collapse512_10.pdf Graphic file (type pdf)
+<use vecs/collapse512_10.pdf>
+Package pdftex.def Info: vecs/collapse512_10.pdf  used on input line 204.
+(pdftex.def)             Requested size: 116.00307pt x 116.80852pt.
+<vecs/serial512_20.pdf, id=676, 311.31514pt x 313.48003pt>
+File: vecs/serial512_20.pdf Graphic file (type pdf)
+<use vecs/serial512_20.pdf>
+Package pdftex.def Info: vecs/serial512_20.pdf  used on input line 206.
+(pdftex.def)             Requested size: 116.00307pt x 116.80852pt.
+<vecs/parallel512_20.pdf, id=677, 311.31514pt x 313.48003pt>
+File: vecs/parallel512_20.pdf Graphic file (type pdf)
+<use vecs/parallel512_20.pdf>
+Package pdftex.def Info: vecs/parallel512_20.pdf  used on input line 207.
+(pdftex.def)             Requested size: 116.00307pt x 116.80852pt.
+<vecs/collapse512_20.pdf, id=678, 311.31514pt x 313.48003pt>
+File: vecs/collapse512_20.pdf Graphic file (type pdf)
+<use vecs/collapse512_20.pdf>
+Package pdftex.def Info: vecs/collapse512_20.pdf  used on input line 208.
+(pdftex.def)             Requested size: 116.00307pt x 116.80852pt.
+ [12 <./vecs/serial512_0.pdf> <./vecs/parallel512_0.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/parallel512_0.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+> <./vecs/collapse512_0.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/collapse512_0.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+> <./vecs/serial512_10.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/serial512_10.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+> <./vecs/parallel512_10.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/parallel512_10.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+> <./vecs/collapse512_10.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/collapse512_10.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+> <./vecs/serial512_20.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/serial512_20.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+> <./vecs/parallel512_20.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/parallel512_20.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+> <./vecs/collapse512_20.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/collapse512_20.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+>]
+<vecs/serial1024_0.pdf, id=912, 320.75954pt x 313.48003pt>
+File: vecs/serial1024_0.pdf Graphic file (type pdf)
+<use vecs/serial1024_0.pdf>
+Package pdftex.def Info: vecs/serial1024_0.pdf  used on input line 214.
+(pdftex.def)             Requested size: 116.00307pt x 113.36931pt.
+<vecs/parallel1024_0.pdf, id=913, 320.75954pt x 313.48003pt>
+File: vecs/parallel1024_0.pdf Graphic file (type pdf)
+<use vecs/parallel1024_0.pdf>
+Package pdftex.def Info: vecs/parallel1024_0.pdf  used on input line 215.
+(pdftex.def)             Requested size: 116.00307pt x 113.36931pt.
+<vecs/collapse1024_0.pdf, id=914, 320.75954pt x 313.48003pt>
+File: vecs/collapse1024_0.pdf Graphic file (type pdf)
+<use vecs/collapse1024_0.pdf>
+Package pdftex.def Info: vecs/collapse1024_0.pdf  used on input line 216.
+(pdftex.def)             Requested size: 116.00307pt x 113.36931pt.
+<vecs/serial1024_10.pdf, id=915, 320.75954pt x 313.48003pt>
+File: vecs/serial1024_10.pdf Graphic file (type pdf)
+<use vecs/serial1024_10.pdf>
+Package pdftex.def Info: vecs/serial1024_10.pdf  used on input line 218.
+(pdftex.def)             Requested size: 116.00307pt x 113.36931pt.
+<vecs/parallel1024_10.pdf, id=916, 320.75954pt x 313.48003pt>
+File: vecs/parallel1024_10.pdf Graphic file (type pdf)
+<use vecs/parallel1024_10.pdf>
+Package pdftex.def Info: vecs/parallel1024_10.pdf  used on input line 219.
+(pdftex.def)             Requested size: 116.00307pt x 113.36931pt.
+<vecs/collapse1024_10.pdf, id=917, 320.75954pt x 313.48003pt>
+File: vecs/collapse1024_10.pdf Graphic file (type pdf)
+<use vecs/collapse1024_10.pdf>
+Package pdftex.def Info: vecs/collapse1024_10.pdf  used on input line 220.
+(pdftex.def)             Requested size: 116.00307pt x 113.36931pt.
+<vecs/serial1024_20.pdf, id=918, 320.75954pt x 313.48003pt>
+File: vecs/serial1024_20.pdf Graphic file (type pdf)
+<use vecs/serial1024_20.pdf>
+Package pdftex.def Info: vecs/serial1024_20.pdf  used on input line 222.
+(pdftex.def)             Requested size: 116.00307pt x 113.36931pt.
+<vecs/parallel1024_20.pdf, id=919, 320.75954pt x 313.48003pt>
+File: vecs/parallel1024_20.pdf Graphic file (type pdf)
+<use vecs/parallel1024_20.pdf>
+Package pdftex.def Info: vecs/parallel1024_20.pdf  used on input line 223.
+(pdftex.def)             Requested size: 116.00307pt x 113.36931pt.
+<vecs/collapse1024_20.pdf, id=920, 320.75954pt x 313.48003pt>
+File: vecs/collapse1024_20.pdf Graphic file (type pdf)
+<use vecs/collapse1024_20.pdf>
+Package pdftex.def Info: vecs/collapse1024_20.pdf  used on input line 224.
+(pdftex.def)             Requested size: 116.00307pt x 113.36931pt.
+ [13 <./vecs/serial1024_0.pdf> <./vecs/parallel1024_0.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/parallel1024_0.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+> <./vecs/collapse1024_0.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/collapse1024_0.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+> <./vecs/serial1024_10.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/serial1024_10.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+> <./vecs/parallel1024_10.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/parallel1024_10.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+> <./vecs/collapse1024_10.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/collapse1024_10.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+> <./vecs/serial1024_20.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/serial1024_20.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+> <./vecs/parallel1024_20.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/parallel1024_20.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+> <./vecs/collapse1024_20.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/collapse1024_20.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+>]
+<vecs/serial2048_0.pdf, id=1154, 320.69432pt x 313.48003pt>
+File: vecs/serial2048_0.pdf Graphic file (type pdf)
+<use vecs/serial2048_0.pdf>
+Package pdftex.def Info: vecs/serial2048_0.pdf  used on input line 230.
+(pdftex.def)             Requested size: 116.00307pt x 113.39323pt.
+<vecs/parallel2048_0.pdf, id=1155, 320.69432pt x 313.48003pt>
+File: vecs/parallel2048_0.pdf Graphic file (type pdf)
+<use vecs/parallel2048_0.pdf>
+Package pdftex.def Info: vecs/parallel2048_0.pdf  used on input line 231.
+(pdftex.def)             Requested size: 116.00307pt x 113.39323pt.
+<vecs/collapse2048_0.pdf, id=1156, 320.69432pt x 313.48003pt>
+File: vecs/collapse2048_0.pdf Graphic file (type pdf)
+<use vecs/collapse2048_0.pdf>
+Package pdftex.def Info: vecs/collapse2048_0.pdf  used on input line 232.
+(pdftex.def)             Requested size: 116.00307pt x 113.39323pt.
+<vecs/serial2048_10.pdf, id=1157, 320.69432pt x 313.48003pt>
+File: vecs/serial2048_10.pdf Graphic file (type pdf)
+<use vecs/serial2048_10.pdf>
+Package pdftex.def Info: vecs/serial2048_10.pdf  used on input line 234.
+(pdftex.def)             Requested size: 116.00307pt x 113.39323pt.
+<vecs/parallel2048_10.pdf, id=1158, 320.69432pt x 313.48003pt>
+File: vecs/parallel2048_10.pdf Graphic file (type pdf)
+<use vecs/parallel2048_10.pdf>
+Package pdftex.def Info: vecs/parallel2048_10.pdf  used on input line 235.
+(pdftex.def)             Requested size: 116.00307pt x 113.39323pt.
+<vecs/collapse2048_10.pdf, id=1159, 320.69432pt x 313.48003pt>
+File: vecs/collapse2048_10.pdf Graphic file (type pdf)
+<use vecs/collapse2048_10.pdf>
+Package pdftex.def Info: vecs/collapse2048_10.pdf  used on input line 236.
+(pdftex.def)             Requested size: 116.00307pt x 113.39323pt.
+<vecs/serial2048_20.pdf, id=1160, 320.69432pt x 313.48003pt>
+File: vecs/serial2048_20.pdf Graphic file (type pdf)
+<use vecs/serial2048_20.pdf>
+Package pdftex.def Info: vecs/serial2048_20.pdf  used on input line 238.
+(pdftex.def)             Requested size: 116.00307pt x 113.39323pt.
+<vecs/parallel2048_20.pdf, id=1161, 320.69432pt x 313.48003pt>
+File: vecs/parallel2048_20.pdf Graphic file (type pdf)
+<use vecs/parallel2048_20.pdf>
+Package pdftex.def Info: vecs/parallel2048_20.pdf  used on input line 239.
+(pdftex.def)             Requested size: 116.00307pt x 113.39323pt.
+<vecs/collapse2048_20.pdf, id=1162, 320.69432pt x 313.48003pt>
+File: vecs/collapse2048_20.pdf Graphic file (type pdf)
+<use vecs/collapse2048_20.pdf>
+Package pdftex.def Info: vecs/collapse2048_20.pdf  used on input line 240.
+(pdftex.def)             Requested size: 116.00307pt x 113.39323pt.
+ [14 <./vecs/serial2048_0.pdf> <./vecs/parallel2048_0.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/parallel2048_0.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+> <./vecs/collapse2048_0.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/collapse2048_0.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+> <./vecs/serial2048_10.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/serial2048_10.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+> <./vecs/parallel2048_10.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/parallel2048_10.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+> <./vecs/collapse2048_10.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/collapse2048_10.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+> <./vecs/serial2048_20.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/serial2048_20.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+> <./vecs/parallel2048_20.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/parallel2048_20.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+> <./vecs/collapse2048_20.pdf
+
+pdfTeX warning: pdflatex.exe (file ./vecs/collapse2048_20.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+>] (./cits3401_pa1_20756971.aux) ) 
 Here is how much of TeX's memory you used:
- 200 strings out of 494931
- 2203 string characters out of 6180851
- 48102 words of memory out of 5000000
- 3598 multiletter control sequences out of 15000+600000
- 3640 words of font info for 14 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 23i,0n,17p,150b,36s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 3920 strings out of 492641
+ 64482 string characters out of 6133116
+ 134825 words of memory out of 5000000
+ 7732 multiletter control sequences out of 15000+600000
+ 8409 words of font info for 30 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 37i,6n,39p,1074b,276s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2018/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmbx12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:
+/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2018/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2018/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmti10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmtt10.pfb>
+Output written on cits3401_pa1_20756971.pdf (14 pages, 1526371 bytes).
+PDF statistics:
+ 1438 PDF objects out of 1440 (max. 8388607)
+ 361 compressed objects within 4 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 246 words of extra memory for PDF output out of 10000 (max. 10000000)
+
