@@ -1,7 +1,7 @@
 import subprocess as sp
 import numpy as np
 import matplotlib
-matplotlib.use("Agg") #backend renderer
+matplotlib.use("PDF") #backend renderer
 from matplotlib import pyplot as plt
 
 test_sizes = ["128", "256", "512", "1024", "2048"]
@@ -38,7 +38,7 @@ plt.ylabel("Elapsed Time (s)")
 plt.xlabel("Grid Dimension (cells)")
 plt.xticks(ind, test_sizes)
 plt.legend([p1[0], p2[0], p3[0]], tests)
-plt.savefig("input_realtime.png", bbox_inches="tight")
+plt.savefig("input_realtime.pdf", bbox_inches="tight")
 plt.clf()
 
 #plot usertime
@@ -50,7 +50,7 @@ plt.ylabel("Equivalent Time (s)")
 plt.xlabel("Grid Dimension (cells)")
 plt.xticks(ind, test_sizes)
 plt.legend([p1[0], p2[0], p3[0]], tests)
-plt.savefig("input_usertime.png", bbox_inches="tight")
+plt.savefig("input_usertime.pdf", bbox_inches="tight")
 plt.clf()
 
 #benchmark cores
@@ -75,7 +75,7 @@ plt.title("Real Time vs Threads")
 plt.ylabel("Time Elapsed (s)")
 plt.xlabel("Threads Created")
 plt.xticks(ind, num_threads)
-plt.savefig("threads_realtime.png", bbox_inches="tight")
+plt.savefig("threads_realtime.pdf", bbox_inches="tight")
 plt.clf()
 
 #plot usertime
@@ -84,5 +84,5 @@ plt.title("User Time vs Threads")
 plt.ylabel("Equivalent Time (s)")
 plt.xlabel("Threads Created")
 plt.xticks(ind, num_threads)
-plt.savefig("threads_usertime.png", bbox_inches="tight")
+plt.savefig("threads_usertime.pdf", bbox_inches="tight")
 plt.clf()
