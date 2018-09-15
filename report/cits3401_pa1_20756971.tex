@@ -1,5 +1,9 @@
 \documentclass[]{article}
+\usepackage{enumitem}
 
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.5em}
+\renewcommand{\baselinestretch}{1.1}
 %opening
 \title{Conway's Game of Life and OpenMP\\
 \large CITS3402 Programming Assignment 1}
@@ -8,10 +12,6 @@
 \begin{document}
 
 \maketitle
-
-\begin{abstract}
-
-\end{abstract}
 
 \section{Report Outline}
 The purpose of this report is to describe the use of OpenMP to parallelise Conway's Game of Life (GoL), and an analysis of the efficiency of multiple implementations of parallelism as they compare to a serial implementation. As well this report provides a general outline of how to use the supplied code to replicate the results and figures found within.
@@ -37,24 +37,24 @@ The implementations can also be compiled and run independently from a shell prom
 \texttt{./outfile [grid\_dimension] [max\_threads]}
 \end{quote}
 
-\begin{itemize}
-\item[\texttt{infile}] The path to the source code of the implementation or script
-\item[\texttt{outfile}] The destination of the compiled binary \texttt{default = a.out}
-\item[\texttt{grid\_dimension}] An integer power of 2 describing the side length of the game grid \texttt{default = 128}
-\item[\texttt{max\_threads}] An integer $i : 1 \leq i \leq 32$ overriding the number of threads to create \texttt{default = dynamically assigned}
+\begin{itemize}[label={}]
+\item \texttt{infile} - the path to the source code of the implementation or script
+\item \texttt{outfile}- the destination of the compiled binary \texttt{default = a.out}
+\item \texttt{grid\_dimension} - an integer power of 2 describing the side length of the game grid \texttt{default = 128}
+\item \texttt{max\_threads} - An integer $i : 1 \leq i \leq 32$ overriding the number of threads to create \texttt{default = dynamically assigned}
 \end{itemize}
 
 \noindent The included files are:
-\begin{itemize}
-\item[\texttt{gol\_serial.c}] A simple serial implementation of the GoL
+\begin{itemize}[label={}]
+\item \texttt{gol\_serial.c} A simple serial implementation of the GoL
 
-\item[\texttt{gol\_parallel.c}] A row-level loop parallelised implementation of the GoL
+\item \texttt{gol\_parallel.c} A row-level loop parallelised implementation of the GoL
 
-\item[\texttt{gol\_collapse.c}] A collapsed loop parallelised implementation of the GoL
+\item \texttt{gol\_collapse.c} A collapsed loop parallelised implementation of the GoL
 
-\item[\texttt{gol\_benchmark.py}] A script to time and plot benchmarks
+\item \texttt{gol\_benchmark.py} A script to time and plot benchmarks
 
-\item[\texttt{gol\_snapshot.py}] A script to capture and generate snapshots of the game state
+\item \texttt{gol\_snapshot.py} A script to capture and generate snapshots of the game state
 \end{itemize}
 
 \section{Output}
@@ -113,10 +113,12 @@ From the data initially it appears that parallel solutions might somehow scale s
 
 The real time speed improvements of the parallel implementations are also accompanied by a significant increase in resource use and computational complexity. User time is a measurement of how long a processor spends executing code in user-space, and in a multi-threaded system it is the equivalent of all time spent by all threads in a process. By comparing the equivalent time each implementation spends in user-space we can gain an understanding of the amount of pressure being applied to the system, and equivalently an idea of how much energy is being dedicated to the task. When allowing OpenMP to dynamically assign threads on the testing system, it always assigns a thread to each of the 8 logical cores available. Compared to the serial implementation, under these conditions the parallel implementations complete a $2048^2$ cell simulation in roughly 30\% of the time, but with close to double the equivalent time spent in user-space.
 
-Disabling dynamic thread creation and specifying a number of threads allows us to visualise the effect of hyperthreading on our implementations. The real time taken to complete the simulation decreases as threads are added until it plateaus at 8. Notably though, the performance benefit from moving from 4 threads to 8 threads is relatively minimal and correlates with a large jump in user-space activity. As the testing machine has 4 physical cores and 8 logical cores it appears that generally matching the number of threads to the number of logical cores will give the best real time performance, but in this simulation a majority of the benefit is gained by matching the number of physical cores. As our parallelism is highly regular, with each thread performing an almost identical sequence of computations we can likely conclude that hyperthreading is relatively inefficient when two threads both require use of the same logic units of a single physical core.
+Disabling dynamic thread creation and specifying a number of threads allows us to visualise the effect of hyperthreading on our implementations. The real time taken to complete the simulation decreases as threads are added until it plateaus at 8. Notably though, the performance benefit of moving from 4 to 8 threads is minimal and correlates with a large jump in user-space activity. As the testing machine has 4 physical cores and 8 logical cores it appears that generally matching the number of threads to the number of logical cores will give the best real time performance, but in this simulation a majority of the benefit is gained by matching the number of physical cores. As our parallelism is highly regular, with each thread performing an almost identical sequence of computations we can likely conclude that hyperthreading is relatively inefficient when two threads both require use of the same logic units of a single physical core.
 
 \section{Conclusion}
-The GoL is relatively simple to parallelise with high levels of scalability, but parallelism alone cannot overcome the polynomial growth of cell count with grid dimensions. There is little apparent difference in the performance of either method of loop parallelism, although collapsed loop methods may scale better on many-core or distributed systems. It is clear that higher numbers of physical cores are generally beneficial, and performance improves linearly as core count increases. Hyperthreaded logical cores also provide a minor improvement in real time performance, although at a significant increase in system load. In a real-world scenario, where energy consumption and system responsiveness are often important factors it is important to consider if the speed-up of parallelising code of this nature is worthwhile when compared to the increase in resources.
+The GoL is relatively simple to parallelise with high levels of scalability, but parallelism alone cannot overcome the polynomial growth of cell count with grid dimensions. There is little apparent difference in the performance of either method of loop parallelism, although collapsed loop methods may scale better on many-core or distributed systems.
+
+It is clear that higher numbers of physical cores are generally beneficial, and performance improves linearly as core count increases. Hyperthreaded logical cores also provide a minor improvement in real time performance, although at a significant increase in system load. In a real-world scenario, where energy consumption and system responsiveness are often important factors it is important to consider if the speed-up of parallelising code of this nature is worthwhile when compared to the increase in resources.
 
 \subsection{Potential Improvements}
 Although the nature of the GoL generally prohibits pipeline-style parallelism, there is still potential for a novel implementation if the number of working game grids is scaled up to the number of threads. By delaying each thread until the proceeding thread has completed a specified number of regions, the next state can begin to be calculated before the first state is completed. This method may improve performance by reducing the amount of forks and joins required as the circular nature of the pipeline avoids the need for swapping out grids at each step. Issues with this implementation are that it could be potentially difficult to extract individual complete states from the pipeline, and the reliance on the first threads completing their work before their successors catch up introduce the risk of race conditions, especially as caching may provide an uneven performance benefit to the successor thread. To avoid race conditions each thread must communicate with the others at regular intervals which can add significant overhead costs.
