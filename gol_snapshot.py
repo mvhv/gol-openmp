@@ -1,6 +1,6 @@
 import subprocess as sp
 import matplotlib
-matplotlib.use("Agg") #backend renderer
+matplotlib.use("PS") #backend renderer
 from matplotlib import pyplot as plt
 
 test_sizes = ["128", "256", "512", "1024", "2048"]
@@ -26,5 +26,5 @@ for test in tests:
                 p1 = plt.imshow(state)
                 p1.set_cmap("Greys")
                 plt.title("GoL-"+size+"-"+test+" state at step "+str(step*10))
-                plt.savefig(test+size+"_"+str(step*10)+".png", bbox_inches="tight")
+                plt.savefig(test+size+"_"+str(step*10)+".eps", bbox_inches="tight")
 
