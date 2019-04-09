@@ -1,4 +1,5 @@
 /* 
+ * EXAMPLE CHANGE
  * CITS3402 - Assignment 1
  * Game of life: 4-neighbourhood
  * Collapsed-loop parallel implementation
